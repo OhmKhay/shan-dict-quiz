@@ -1,14 +1,11 @@
 A Shan Dictionary Quiz with a countdown timer and a list of questions.
 
-## See in Action
-
-- [Demo](https://quizapp-gray-nine.vercel.app/)
-
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/) - Frontend framework for building React applications
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs
 - [Framer Motion](https://www.framer.com/motion/) - An open source React library to power production-ready animations
+- [Recoil](https://www.recoil.com) - A state management with Recoil
 - [Vercel](https://vercel.com/) - An all-in-one platform for deploying modern web projects
 
 ## Getting Started
@@ -16,7 +13,7 @@ A Shan Dictionary Quiz with a countdown timer and a list of questions.
 First, clone the repo and install dependencies
 
 ```bash
-git clone https://github.com/codingwithdidem/quizapp.git
+git clone (https://github.com/haohaaorg/shan-dict-quiz.git)
 npm install
 ```
 
