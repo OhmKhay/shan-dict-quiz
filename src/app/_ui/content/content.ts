@@ -1,6 +1,6 @@
 export const importantToKnow = [
-  "In each quiz, you  are required to answer 10 questions.",
-  "You will have 1 minutes for each question. If you fail to complete a question in given time, your answer will be considered incorrect.",
+  "Quiz ၼိုင်ႈဢၼ်ၼၼ်ႉ တေလႆႈတွပ်ႇပၼ် ၶေႃႈတွပ်ႇမၼ်းၵူႈဢၼ်ၼႆယဝ်ႉ။",
+  "ၶေႃႈထၢမ် ၼိုင်ႈဢၼ်ၼၼ်ႉ ၶၢဝ်းယၢမ်းလႆႈ 1 မီးၼိတ်ႉသေ သင်ၶၢဝ်းယၢမ်းပူၼ်ႉၼႆ တေၼပ်ႉဝႃႈတွပ်ႇဢမ်ႇမႅၼ်ႈၼႆယဝ်ႉ။",
 ];
 
 export const quizQuestions = [

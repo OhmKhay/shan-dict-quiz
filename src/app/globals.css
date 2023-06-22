@@ -8,3 +8,16 @@
     height: calc(var(--vh, 1vh) * 100);
   }
 }
+
+h3,
+h4,
+p {
+  font-family: "Shan";
+}
+
+@font-face {
+  font-family: "Shan";
+  src: local("Shan"), url("/fonts/Shan/Shan.ttf") format("ttf"),
+    url("/fonts/Shan/Shan.woff2") format("woff2"),
+    url("/fonts/Shan/Shan.woff") format("woff");
+}

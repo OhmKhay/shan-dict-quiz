@@ -202,7 +202,7 @@ export const Quiz = () => {
         </h1>
         <div className="w-full py-4 mt-6 mb-1 border rounded-2xl border-brand-light-gray px-7">
           <h3 className="text-sm font-medium text-black">
-            Question {activeQuestion + 1} / {numberOfQuestions}
+            ၶေႃႈထၢမ် {activeQuestion + 1} / {numberOfQuestions}
           </h3>
 
           <div

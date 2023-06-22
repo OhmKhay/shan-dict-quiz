@@ -1,7 +1,4 @@
-"use client";
-
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { CheckCircle } from "@/ui/icons/CheckCircle";
 import { importantToKnow } from "@/ui/content/content";
 import { Button } from "./Button";
@@ -14,6 +11,7 @@ import Loading from "../Loading";
 
 interface IntroProps {
   onGetStartedClick: () => void;
+  categories?: any[];
 }
 
 export const Intro = ({ onGetStartedClick }: IntroProps) => {
@@ -43,21 +41,13 @@ export const Intro = ({ onGetStartedClick }: IntroProps) => {
   }, []);
   return (
     <div className="flex flex-col w-full px-5 py-8 mx-auto overflow-hidden lg:max-w-4xl">
-      {/* <Image
-        src="/quiz.webp"
-        width={203}
-        height={363}
-        className="absolute opacity-[0.8] -bottom-0 left-0 z-0 object-cover pointer-events-none w-[12.5rem] h-[12.5rem] lg:w-[15.375rem] lg:h-[230px]"
-        alt="Doodles Illustration"
-      /> */}
-
       <div className="z-10 flex flex-col items-center flex-1 w-full">
         <h1 className="text-brand-cerulean-blue font-bold text-[1.8rem] sm:text-4xl">
           Shan Dictionary Quiz
         </h1>
 
-        <h3 className="text-black font-bold text-2xl mt-[2rem] sm:text-3xl">
-          Things to keep in mind before start:
+        <h3 className="text-black !font-shan font-bold text-2xl mt-[2rem] sm:text-3xl">
+          ၶေႃႈမၢႆတွင်း မိူဝ်ႈတေၶဝ်ႈတွပ်ႇ
         </h3>
 
         <div className="flex flex-col items-start mt-5 space-y-5 sm:mt-10">
@@ -71,8 +61,8 @@ export const Intro = ({ onGetStartedClick }: IntroProps) => {
           ))}
         </div>
       </div>
-      <h3 className="text-black md:text-center font-bold text-2xl mt-[2rem] sm:text-3xl">
-        Before starting, please choose your quiz type:
+      <h3 className="text-black !font-shan md:text-center font-bold text-2xl mt-[2rem] sm:text-3xl">
+        လိူၵ်ႈပၼ် Quiz ဢၼ်သူၼ်ၸႂ်ၼၼ်ႉသေၵမ်း
       </h3>
 
       {categories?.length > 0 ? (

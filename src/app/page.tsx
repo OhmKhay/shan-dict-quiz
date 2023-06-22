@@ -6,8 +6,9 @@ import { Countdown } from "@/ui/components/Countdown";
 import { Intro } from "@/ui/components/Intro";
 import { Quiz } from "@/ui/components/Quiz";
 import { RecoilRoot } from "recoil";
+import { csvToJson } from "./_ui/utils/csvToJson";
 
-export default function Home() {
+const Home = ({ categories }: any) => {
   const [displayView, setDisplayView] = useState("intro");
 
   return (
@@ -18,6 +19,7 @@ export default function Home() {
             {
               intro: (
                 <Intro
+                  categories={categories}
                   onGetStartedClick={() => {
                     setDisplayView("countdown");
                   }}
@@ -37,4 +39,6 @@ export default function Home() {
       </RecoilRoot>
     </main>
   );
-}
+};
+
+export default Home;
