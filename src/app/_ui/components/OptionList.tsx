@@ -32,12 +32,6 @@ export const OptionList = ({
     (option) => option === activeQuestion.correctAnswer
   );
 
-  console.log({
-    correctAnswerIndex,
-    activeQuestion,
-    options,
-  });
-
   const renderSelectedOptionBadge = (idx: number) => {
     if (selectedAnswerIndex === -1) {
       return null;

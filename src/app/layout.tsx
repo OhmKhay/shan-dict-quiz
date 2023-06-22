@@ -26,6 +26,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="description" content={"Quiz - Shan Dictionary"} />
+      <meta name="keywords" content="HaoHaa, Science, Quiz, English, Shan" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"
+      />
+      <meta property="og:title" content={"Quiz - Shan Dictionary"} />
+      <meta property="og:site_name" content="Quiz" />
+      <meta property="og:type" content={"website"} />
+      <meta property="og:url" content={"https://quizzes.shandictionary.com/"} />
+      <meta
+        property="og:image"
+        content={
+          "https://haohaa.sgp1.cdn.digitaloceanspaces.com/shan-dict-cover.png"
+        }
+      />
+      <meta property="og:image:alt" content={"Quiz - Shan Dictionary"} />
+      <meta
+        property="og:description"
+        content={
+          "A quiz that includes a timer, a list of questions, and a countdown."
+        }
+      />
+
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
+
       <body
         className={`${ubuntu.variable} ${plusJakartaSans.variable} font-ubuntu`}
       >

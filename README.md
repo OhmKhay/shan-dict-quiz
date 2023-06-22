@@ -5,7 +5,7 @@ A Shan Dictionary Quiz with a countdown timer and a list of questions.
 - [Next.js](https://nextjs.org/) - Frontend framework for building React applications
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs
 - [Framer Motion](https://www.framer.com/motion/) - An open source React library to power production-ready animations
-- [Recoil](https://www.recoil.com) - A state management with Recoil
+- [Recoil](https://www.recoiljs.org) - A state management library for React
 - [Vercel](https://vercel.com/) - An all-in-one platform for deploying modern web projects
 
 ## Getting Started

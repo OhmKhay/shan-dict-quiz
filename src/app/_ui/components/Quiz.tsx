@@ -12,6 +12,7 @@ import {
 import { csvToJson } from "../utils/csvToJson";
 import { useRecoilValue } from "recoil";
 import { quizState } from "@/app/states";
+import Loading from "../Loading";
 
 const TIME_LIMIT = 60; // 1 minute per question
 
@@ -162,7 +163,11 @@ export const Quiz = () => {
   };
 
   if (quizQuestions?.length < 1) {
-    return <div>Loading.....</div>;
+    return (
+      <div className="flex justify-center w-full h-full p-5">
+        <Loading />
+      </div>
+    );
   }
 
   const { question, options } = quizQuestions[activeQuestion] || {};
@@ -193,7 +198,7 @@ export const Quiz = () => {
     >
       <div className="flex flex-col text-black font-bold text-[32px] text-center w-full">
         <h1 className="text-base font-bold text-brand-cerulean-blue">
-          QuizApp
+          Shan Dictionary Quiz
         </h1>
         <div className="w-full py-4 mt-6 mb-1 border rounded-2xl border-brand-light-gray px-7">
           <h3 className="text-sm font-medium text-black">

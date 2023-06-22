@@ -35,17 +35,17 @@ export const Result = ({ results, totalQuestions }: ResultProps) => {
           clipPath: "circle(100% at 50% 50%)",
         },
       }}
-      className="w-full h-full flex justify-center p-5"
+      className="flex justify-center w-full h-full p-5"
       initial="initial"
       animate="animate"
       exit="exit"
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col text-black font-bold text-[32px] text-center w-full">
-        <h1 className="font-bold text-base text-white">QuizApp</h1>
+        <h1 className="text-base font-bold text-white">Shan Dictionary Quiz</h1>
 
         {/* Result Box */}
-        <div className="mt-6 flex-1 bg-white border border-brand-light-gray rounded-2xl flex flex-col items-center py-7 px-2 ">
+        <div className="flex flex-col items-center flex-1 px-2 mt-6 bg-white border border-brand-light-gray rounded-2xl py-7 ">
           <Lottie
             animationData={confettiAnimation}
             loop={false}
@@ -55,13 +55,13 @@ export const Result = ({ results, totalQuestions }: ResultProps) => {
           <h3 className="text-brand-midnight text-[32px] font-medium leading-9 mt-4">
             Congratulations!
           </h3>
-          <p className="text-brand-midnight text-xl font-normal mt-2">
+          <p className="mt-2 text-xl font-normal text-brand-midnight">
             You scored
           </p>
           <span className="text-brand-midnight font-medium text-[40px]">
             {`${correctAnswers}/${totalQuestions}`}
           </span>
-          <p className="text-brand-midnight text-sm font-normal mt-1">
+          <p className="mt-1 text-sm font-normal text-brand-midnight">
             correct answers
           </p>
 
@@ -100,7 +100,7 @@ export const Result = ({ results, totalQuestions }: ResultProps) => {
                 {
                   label: "Wrong",
                   value: wrongAnswers,
-                  color: "#007bff",
+                  color: "#e65f5c",
                 },
               ]}
             />
@@ -109,13 +109,7 @@ export const Result = ({ results, totalQuestions }: ResultProps) => {
 
         {/* Retry Button */}
         <div className="mt-auto">
-          <Button
-            intent={"secondary"}
-            size="small"
-            block
-            className="mt-6"
-            onClick={handleRetry}
-          >
+          <Button size="small" block className="mt-6" onClick={handleRetry}>
             Try Again
           </Button>
         </div>
