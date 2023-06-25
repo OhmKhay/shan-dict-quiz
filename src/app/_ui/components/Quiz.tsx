@@ -26,7 +26,7 @@ export const Quiz = () => {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(-1);
   const [quizFinished, setQuizFinished] = useState(false);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
-  const useQuizState = useRecoilValue(quizState);
+  const useQuizState: any = useRecoilValue(quizState);
   const [results, setResults] = useState({
     correctAnswers: 0,
     wrongAnswers: 0,
@@ -190,7 +190,7 @@ export const Quiz = () => {
           clipPath: "circle(100% at 50% 50%)",
         },
       }}
-      className="flex justify-center w-full h-full p-5"
+      className="flex justify-center w-full h-full p-5 h-viewport"
       initial="initial"
       animate="animate"
       exit="exit"
@@ -200,6 +200,9 @@ export const Quiz = () => {
         <h1 className="text-base font-bold text-brand-cerulean-blue">
           Shan Dictionary Quiz
         </h1>
+        <p className="text-[1rem] mt-[0.625rem]">
+          {useQuizState?.label && useQuizState?.label}
+        </p>
         <div className="w-full py-4 mt-6 mb-1 border rounded-2xl border-brand-light-gray px-7">
           <h3 className="text-sm font-medium text-black">
             ၶေႃႈထၢမ် {activeQuestion + 1} / {numberOfQuestions}
@@ -242,12 +245,12 @@ export const Quiz = () => {
           isCorrectAnswer={isCorrectAnswer}
         />
 
-        <div className="z-10 w-full mt-auto">
+        <div className="z-10 w-[50%] mx-auto  mt-auto">
           <Button
             disabled={selectedAnswerIndex === -1}
             block
             size="small"
-            className="hover:bg-blue-600"
+            className="bg-blue-500 hover:bg-blue-600"
             onClick={handleNextQuestion}
           >
             Next

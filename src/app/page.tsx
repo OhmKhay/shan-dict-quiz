@@ -5,14 +5,13 @@ import { AnimatePresence } from "framer-motion";
 import { Countdown } from "@/ui/components/Countdown";
 import { Intro } from "@/ui/components/Intro";
 import { Quiz } from "@/ui/components/Quiz";
-import { RecoilRoot } from "recoil";
-import { csvToJson } from "./_ui/utils/csvToJson";
+import { RecoilRoot, useRecoilValue } from "recoil";
 
 const Home = ({ categories }: any) => {
   const [displayView, setDisplayView] = useState("intro");
 
   return (
-    <main className="flex flex-col w-full overflow-hidden h-viewport">
+    <main className={`flex flex-col w-full h-full`}>
       <RecoilRoot>
         <AnimatePresence mode="wait">
           {

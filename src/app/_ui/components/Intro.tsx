@@ -40,7 +40,9 @@ export const Intro = ({ onGetStartedClick }: IntroProps) => {
     getCategoryList();
   }, []);
   return (
-    <div className="flex flex-col w-full px-5 py-8 mx-auto overflow-hidden lg:max-w-4xl">
+    <div
+      className={`flex flex-col w-full px-5 py-8 mx-auto overflow-hidden lg:max-w-4xl`}
+    >
       <div className="z-10 flex flex-col items-center flex-1 w-full">
         <h1 className="text-brand-cerulean-blue font-bold text-[1.8rem] sm:text-4xl">
           Shan Dictionary Quiz
@@ -91,7 +93,7 @@ export const Intro = ({ onGetStartedClick }: IntroProps) => {
       )}
 
       <Button
-        className="z-10 mt-[1.25rem] w-full hover:bg-blue-600"
+        className="z-10 mt-[1.25rem]  w-full bg-blue-500 hover:bg-blue-600"
         block
         size={"small"}
         disabled={quizType ? false : true}
