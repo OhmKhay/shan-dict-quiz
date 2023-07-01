@@ -6,6 +6,7 @@ import { Countdown } from "@/ui/components/Countdown";
 import { Intro } from "@/ui/components/Intro";
 import { Quiz } from "@/ui/components/Quiz";
 import { RecoilRoot, useRecoilValue } from "recoil";
+import Footer from "./_ui/Footer";
 
 const Home = ({ categories }: any) => {
   const [displayView, setDisplayView] = useState("intro");
@@ -35,6 +36,8 @@ const Home = ({ categories }: any) => {
             }[displayView]
           }
         </AnimatePresence>
+
+        <Footer />
       </RecoilRoot>
     </main>
   );

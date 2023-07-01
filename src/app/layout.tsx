@@ -32,6 +32,11 @@ export default function RootLayout({
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"
       />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="https://haohaa.sgp1.digitaloceanspaces.com/apple-touch-icon.png"
+      />
       <meta property="og:title" content={"Quiz - Shan Dictionary"} />
       <meta property="og:site_name" content="Quiz" />
       <meta property="og:type" content={"website"} />
