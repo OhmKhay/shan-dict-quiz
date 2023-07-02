@@ -85,10 +85,10 @@ const CreditPage = () => {
                 Using English Quiz
               </h2>
               <p className="mb-4 text-lg font-normal text-gray-500 break-words dark:text-gray-400">
-                https://www.usingenglish.com/quizzes/65.html
+                https://www.usingenglish.com/quizzes/
               </p>
               <a
-                href="https://www.usingenglish.com/quizzes/65.html"
+                href="https://www.usingenglish.com/quizzes"
                 className="inline-flex items-center text-lg font-medium text-blue-600 dark:text-blue-500 hover:underline"
               >
                 Read more

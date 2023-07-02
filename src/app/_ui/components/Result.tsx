@@ -5,6 +5,8 @@ import { Button } from "@/app/_ui/components/Button";
 
 import confettiAnimation from "@/ui/assets/animations/confetti.json";
 import { DonutChart } from "./DonutChart";
+import { quizState } from "@/app/states";
+import { useRecoilValue } from "recoil";
 
 interface ResultProps {
   results: {
@@ -16,7 +18,7 @@ interface ResultProps {
 }
 export const Result = ({ results, totalQuestions }: ResultProps) => {
   const { correctAnswers, wrongAnswers, secondsUsed } = results;
-
+  const useQuizState: any = useRecoilValue(quizState);
   const handleRetry = () => {
     // Restart quiz
     window.location.reload();
@@ -43,7 +45,9 @@ export const Result = ({ results, totalQuestions }: ResultProps) => {
     >
       <div className="flex flex-col text-black font-bold text-[32px] text-center w-full">
         <h1 className="text-base font-bold text-white">Shan Dictionary Quiz</h1>
-
+        <p className="text-[1rem] mt-[0.625rem] text-white">
+          {useQuizState?.label && useQuizState?.label}
+        </p>
         {/* Result Box */}
         <div className="flex flex-col items-center flex-1 px-2 mt-6 bg-white border border-brand-light-gray rounded-2xl py-7 ">
           <Lottie
@@ -108,8 +112,13 @@ export const Result = ({ results, totalQuestions }: ResultProps) => {
         </div>
 
         {/* Retry Button */}
-        <div className="mt-auto">
-          <Button size="small" block className="mt-6" onClick={handleRetry}>
+        <div className="mt-auto w-[50%] mx-auto">
+          <Button
+            size="small"
+            block
+            className="mt-6 w-[50%]"
+            onClick={handleRetry}
+          >
             Try Again
           </Button>
         </div>

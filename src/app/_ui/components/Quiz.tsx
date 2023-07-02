@@ -164,7 +164,7 @@ export const Quiz = () => {
 
   if (quizQuestions?.length < 1) {
     return (
-      <div className="flex justify-center w-full h-full p-5">
+      <div className="flex justify-center w-full h-full p-5 h-viewport">
         <Loading />
       </div>
     );
